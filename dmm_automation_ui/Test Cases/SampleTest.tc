@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Sample Test Case for PoC</description>
+   <name>SampleTest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e55dac7b-b461-49a4-a679-fe24dcbb7cda</testCaseGuid>
+</TestCaseEntity>

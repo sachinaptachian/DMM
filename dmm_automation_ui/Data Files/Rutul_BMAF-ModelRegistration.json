@@ -1,0 +1,108 @@
+{
+  "dataType": "tabular",
+  "dataColumns": [
+  {
+    "valueType": "categorical", 
+    "isFeature": "true", 
+    "name": "poutcome"
+  }, 
+  {
+    "valueType": "numerical", 
+    "isFeature": "true", 
+    "name": "campaign",
+    "bins": 10
+  }, 
+  {
+    "valueType": "categorical", 
+    "isFeature": "true", 
+    "name": "loan"
+  }, 
+  {
+    "valueType": "categorical", 
+    "isFeature": "true", 
+    "name": "marital"
+  }, 
+  {
+    "valueType": "numerical", 
+    "isFeature": "true", 
+    "name": "euribor3m",
+    "bins": [0,0.5,1,1.2,1.5,2.0,3.0,4.0,5.0]
+  }, 
+  {
+    "valueType": "numerical", 
+    "isFeature": "true", 
+    "name": "pdays",
+    "bins": [0,1,2,3,4,5,6,10,50,100,200,500,1000]
+  }, 
+  {
+    "valueType": "numerical", 
+    "isFeature": "true", 
+    "name": "previous",
+    "bins": 8
+  }, 
+  {
+    "valueType": "categorical", 
+    "isFeature": "true", 
+    "name": "education"
+  }, 
+  {
+    "valueType": "categorical", 
+    "isFeature": "true", 
+    "name": "housing"
+  }, 
+  {
+    "valueType": "categorical", 
+    "isFeature": "true", 
+    "name": "contact"
+  }, 
+  {
+    "valueType": "categorical", 
+    "isFeature": "true", 
+    "name": "job"
+  }, 
+  {
+    "valueType": "numerical", 
+    "isFeature": "true", 
+    "name": "cons.conf.idx",
+    "bins": 8
+  }, 
+  {
+    "valueType": "categorical", 
+    "isFeature": "true", 
+    "name": "default"
+  }, 
+  {
+    "valueType": "numerical", 
+    "isFeature": "true", 
+    "name": "age",
+    "bins": 10
+  }, 
+  {
+    "valueType": "categorical", 
+    "isFeature": "true", 
+    "name": "day_of_week"
+  }, 
+  {
+    "valueType": "numerical", 
+    "isFeature": "true", 
+    "name": "cons.price.idx",
+    "bins": "fd"
+  }, 
+  {
+    "valueType": "categorical", 
+    "isPrediction": "true", 
+    "name": "y"
+  }
+],
+  "dataLocation": "https://s3.ap-south-1.amazonaws.com/domino-dmm-cloud-spg-files/BMAF-TrainingData.csv",
+  "modelType": "classification",
+  "algorithm": "random_forest",
+  "modelMetadata": {
+    "name": "BMAF-1",
+    "modelVersion": "1.01",
+    "dateCreated": "2019-07-11T13:38:09.908232",
+    "dataset": "BankMarketing-Train-30K",
+    "description": "Predict purchase of term deposit product",
+    "author": "SamT"
+  }
+}

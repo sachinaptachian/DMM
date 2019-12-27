@@ -1,0 +1,11 @@
+{
+  "dataColumns": [
+    {
+      "valueType": "categorical",
+      "isGroundTruth": "true",
+      "predictionLabel": "y",
+      "name": "y_gt"
+    }
+  ],
+  "dataLocation": "https://s3.ap-south-1.amazonaws.com/domino-dmm-cloud-spg-files/BMAF-GroundTruth-1.csv"
+}

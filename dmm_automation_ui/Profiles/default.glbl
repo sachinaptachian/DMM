@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Domino Model Monitor Web Portal URL</description>
+      <initValue>'https://beta-trial.dmm.domino.tech/'</initValue>
+      <name>web_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Domino Model Monitor registered username</description>
+      <initValue>'sachin@aptachain.com'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Domino Model Monitor registered user password</description>
+      <initValue>'QCBFqvfE6RbE8s6s'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>
