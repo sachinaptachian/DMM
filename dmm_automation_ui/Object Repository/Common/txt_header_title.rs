@@ -6,14 +6,21 @@
    <elementGuidId>d20e0c25-eb73-42c1-b9de-694046435b4f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='header']//span[text()='Domino Model Monitor']</value>
+         <key>BASIC</key>
+         <value>//div[@class='header']//span[text()='Domino']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='header']//span[text()='Domino']</value>
+   </webElementProperties>
 </WebElementEntity>

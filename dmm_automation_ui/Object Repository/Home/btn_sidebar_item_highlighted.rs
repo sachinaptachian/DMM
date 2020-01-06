@@ -6,14 +6,21 @@
    <elementGuidId>e7e805aa-3220-436f-8401-6451e9b23847</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class='sidebar']//div[contains(@class,'highlight') and text()='${name}']</value>
+         <key>BASIC</key>
+         <value>//div[@class='sidebar']//div[contains(@class,'highlight')]/div[text()='${name}']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='sidebar']//div[contains(@class,'highlight')]/div[text()='${name}']</value>
+   </webElementProperties>
 </WebElementEntity>

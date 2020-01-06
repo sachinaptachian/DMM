@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>QA</name>
+   <tag></tag>
+   <defaultProfile>false</defaultProfile>
+   <GlobalVariableEntity>
+      <description>Domino Model Monitor Web Portal URL</description>
+      <initValue>'https://qa.dmm.domino.tech'</initValue>
+      <name>web_url</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Domino Model Monitor registered username</description>
+      <initValue>'amrutha@dominodatalab.com'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Domino Model Monitor registered user password</description>
+      <initValue>'qaorg@domino'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Training data file name</description>
+      <initValue>'Automation_Test_BankMarketing-TrainSet.csv'</initValue>
+      <name>trainingDataFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Register Model File Name</description>
+      <initValue>'Automation_ModelConfig.json'</initValue>
+      <name>registerModelFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Current Test Case ID</description>
+      <initValue>''</initValue>
+      <name>testCaseId</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

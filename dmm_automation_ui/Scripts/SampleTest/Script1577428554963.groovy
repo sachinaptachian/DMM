@@ -20,13 +20,13 @@ import internal.GlobalVariable as GlobalVariable
 CustomKeywords.'com.app.dmm.login.LoginPage.loginToPortal'()
 
 'Navigate to sidebar items'
-CustomKeywords.'com.app.dmm.home.DataPage.navigateToSidebarItemData'('Data')
+CustomKeywords.'com.app.dmm.home.DataPage.navigateToSidebarItemData'()
 
 'Upload Data File'
 String path = RunConfiguration.getProjectDir() + '/Data Files/'
 path = path.replace('/', '\\')
 path = path + 'Rutul_BMAF-TrainingData.csv'
-CustomKeywords.'com.app.dmm.utils.FileOperations.uploadFile'(findTestObject('Object Repository/Home/Data/link_browse'), path)
+CustomKeywords.'com.app.dmm.utils.FileOperations.uploadFile'(findTestObject('Home/link_browse'), path)
 
 'Logout from portal'
 CustomKeywords.'com.app.dmm.login.LoginPage.logoutFromPortal'()

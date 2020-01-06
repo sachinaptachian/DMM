@@ -6,14 +6,21 @@
    <elementGuidId>c6d96edf-d073-4200-8414-aa3b2f617ec8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
          <value>//button[contains(@class,'log-in')]/div[text()='Log in']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[contains(@class,'log-in')]/div[text()='Log in']</value>
+   </webElementProperties>
 </WebElementEntity>

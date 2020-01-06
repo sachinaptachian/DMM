@@ -19,4 +19,14 @@
       <initValue>'QCBFqvfE6RbE8s6s'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Training data file name</description>
+      <initValue>'Rutul_BMAF-TrainingData.csv'</initValue>
+      <name>trainingDataFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Register Model File Name</description>
+      <initValue>'Rutul_BMAF-ModelRegistration.json'</initValue>
+      <name>registerModelFile</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

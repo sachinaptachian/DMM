@@ -6,14 +6,21 @@
    <elementGuidId>7d3882e1-8af6-4b93-9a75-472be679cd37</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
          <value>//div[contains(@class,'upload')]//h2[text()='Upload To S3']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[contains(@class,'upload')]//h2[text()='Upload To S3']</value>
+   </webElementProperties>
 </WebElementEntity>

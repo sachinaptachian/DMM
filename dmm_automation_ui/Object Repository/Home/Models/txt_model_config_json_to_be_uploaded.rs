@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txt_model_config_json_to_be_uploaded</name>
+   <tag></tag>
+   <elementGuidId>ad87b5ef-f5f4-4d2b-a595-612aa3b0ac69</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//legend[text()='${fileName}']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//legend[text()='${fileName}']</value>
+   </webElementProperties>
+</WebElementEntity>
