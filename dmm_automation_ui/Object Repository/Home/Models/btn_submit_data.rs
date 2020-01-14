@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_register_model_popup_title</name>
+   <name>btn_submit_data</name>
    <tag></tag>
-   <elementGuidId>6c70116c-b511-4eef-826b-982b12917be1</elementGuidId>
+   <elementGuidId>f9a6aaea-a83c-4fcd-bfef-79c227b40b5d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='title']/div[text()='Register Model']</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
+         <value>//div[@class='modal-inner-container']//button/div[text()='Submit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='title']/div[text()='Register Model']</value>
+      <value>//div[@class='modal-inner-container']//button/div[text()='Submit']</value>
    </webElementProperties>
 </WebElementEntity>

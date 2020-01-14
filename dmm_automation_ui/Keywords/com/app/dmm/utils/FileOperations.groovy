@@ -1,7 +1,5 @@
 package com.app.dmm.utils
 
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
 import java.awt.Robot
 import java.awt.Toolkit
 import java.awt.datatransfer.StringSelection
@@ -12,10 +10,9 @@ import org.openqa.selenium.WebDriver
 import com.app.dmm.common.CommonKeywords
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-
-import com.kms.katalon.core.util.KeywordUtil
 
 public class FileOperations {
 
@@ -36,6 +33,9 @@ public class FileOperations {
 			StringSelection path = new StringSelection(file)
 			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path, null)
 			robot.setAutoDelay(1000)
+			WebUI.delay(5)
+			robot.keyPress(KeyEvent.VK_ENTER)
+			robot.keyRelease(KeyEvent.VK_ENTER)
 			robot.keyPress(KeyEvent.VK_CONTROL)
 			robot.keyPress(KeyEvent.VK_V)
 			robot.keyRelease(KeyEvent.VK_CONTROL)

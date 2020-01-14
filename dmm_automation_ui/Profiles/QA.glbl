@@ -20,18 +20,38 @@
       <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Training data file name</description>
-      <initValue>'Automation_Test_BankMarketing-TrainSet.csv'</initValue>
-      <name>trainingDataFile</name>
+      <description>Current Test Case ID</description>
+      <initValue>''</initValue>
+      <name>testCaseId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Register Model File Name</description>
+      <description>Training data csv file name</description>
+      <initValue>'Automation_Test_BankMarketing-TrainSet.csv'</initValue>
+      <name>trainingDataSet</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Register Model json file name</description>
       <initValue>'Automation_ModelConfig.json'</initValue>
       <name>registerModelFile</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>Current Test Case ID</description>
-      <initValue>''</initValue>
-      <name>testCaseId</name>
+      <description>Prediction Data csv file name</description>
+      <initValue>'Automation_Test_BankMarketing-PredictionSet.csv'</initValue>
+      <name>predictionDataSet</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Prediction Data json file name</description>
+      <initValue>'Automation_AddPredictionData.json'</initValue>
+      <name>predictionDataJsonFile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Ground Truth Data csv file name</description>
+      <initValue>'Automation_Test_BankMarketing-GTLabels.csv'</initValue>
+      <name>groundTruthDataSet</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Ground Truth Data json file name</description>
+      <initValue>'Automation_AddGroundTruthData.json'</initValue>
+      <name>groundTruthDataJsonFile</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

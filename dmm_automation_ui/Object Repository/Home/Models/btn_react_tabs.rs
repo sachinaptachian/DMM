@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_register_model_popup_title</name>
+   <name>btn_react_tabs</name>
    <tag></tag>
-   <elementGuidId>6c70116c-b511-4eef-826b-982b12917be1</elementGuidId>
+   <elementGuidId>5221a95d-93ce-4f3c-9756-8335503fa05d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='title']/div[text()='Register Model']</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
+         <value>//ul[@role='tablist']//div[text()='${tabName}']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='title']/div[text()='Register Model']</value>
+      <value>//ul[@role='tablist']//div[text()='${tabName}']</value>
    </webElementProperties>
 </WebElementEntity>

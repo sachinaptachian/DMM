@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_register_model_popup_title</name>
+   <name>btn_add_prediction_data</name>
    <tag></tag>
-   <elementGuidId>6c70116c-b511-4eef-826b-982b12917be1</elementGuidId>
+   <elementGuidId>996df67d-8fd8-4a74-bef3-9855a6cc4e84</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class='title']/div[text()='Register Model']</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
+         <value>//button/div[text()='Add Prediction Data']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='title']/div[text()='Register Model']</value>
+      <value>//button/div[text()='Add Prediction Data']</value>
    </webElementProperties>
 </WebElementEntity>

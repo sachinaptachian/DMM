@@ -7,5 +7,5 @@
       "name": "y_gt"
     }
   ],
-  "dataLocation": "https://s3.ap-southeast-1.amazonaws.com/domino-dmm-cloud-spg-files/BankMarketing-GTLabels.csv"
+  "dataLocation": "https://s3.us-west-2.amazonaws.com/domino-dmm-qa2-data-files/Automation_Test_BankMarketing-GTLabels.csv"
 }

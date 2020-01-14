@@ -31,11 +31,11 @@ public class DataPage {
 	}
 
 	@Keyword
-	def submitAndVerifyTrainingDataUploaded(String file) {
+	def submitAndVerifyDataSetUploaded(String file) {
 		try {
 			// Verify File Uploaded
 			assert common.waitForElement(findTestObject('Object Repository/Home/txt_upload_complete_status'), 90, WaitCondition.ELEMENT_VISIBLE), "Could not find File upload complete status"
-			
+
 			Path filePath = Paths.get(file.replace('\\', '/'))
 			Path fileName = filePath.getFileName()
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Home/Data/input_file_description_placeholder', [('fileName'):fileName.toString()]))
@@ -46,7 +46,7 @@ public class DataPage {
 			// Verify and close File Saved toast message
 			assert common.waitForElement(findTestObject('Object Repository/Home/Data/txt_file_save_success_toast_msg'), 5, WaitCondition.ELEMENT_VISIBLE), "Error while verifying file success toast message"
 			WebUI.click(findTestObject('Object Repository/Home/Data/btn_close_toast_msg'))
-			
+
 			// Search uploaded file with name
 			WebUI.sendKeys(findTestObject('Object Repository/Home/Data/input_search_file'), fileName.toString())
 			KeywordUtil.logInfo('Searched File Path')
