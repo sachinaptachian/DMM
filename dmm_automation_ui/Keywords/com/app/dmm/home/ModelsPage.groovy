@@ -181,4 +181,13 @@ public class ModelsPage {
 			KeywordUtil.markFailedAndStop(e.getMessage())
 		}
 	}
+	
+	@Keyword
+	def searchAndVerifyDataDriftFeature(String feature) {
+		// Search Data Drift feature
+		WebUI.sendKeys(findTestObject('Object Repository/Home/Models/input_search_feature'), feature)
+		
+		// Verify searched feature name
+		WebUI.verifyElementVisible(findTestObject('Object Repository/Home/Models/txt_searched_data_drift_feature_name', [('featureName'):feature]))
+	}
 }

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>txt_searched_data_drift_feature_name</name>
+   <tag></tag>
+   <elementGuidId>e0b47bdd-1b71-48c9-9724-b78a52901478</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class='data-drift-name-container']//div[text()='${featureName}']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='data-drift-name-container']//div[text()='${featureName}']</value>
+   </webElementProperties>
+</WebElementEntity>

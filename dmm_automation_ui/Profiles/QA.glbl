@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Current Test Case ID</description>
-      <initValue>''</initValue>
+      <initValue>'SampleTest001'</initValue>
       <name>testCaseId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

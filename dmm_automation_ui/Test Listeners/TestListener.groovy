@@ -23,7 +23,7 @@ class TestListener {
 	 */
 	@BeforeTestCase
 	def sampleBeforeTestCase(TestCaseContext testCaseContext) {
-		GlobalVariable.testCaseId = testCaseContext.getTestCaseId().split("/")[1]
+		// GlobalVariable.testCaseId = testCaseContext.getTestCaseId().split("/")[1]
 		
 		// Open browser
 		WebUI.openBrowser(GlobalVariable.web_url)
