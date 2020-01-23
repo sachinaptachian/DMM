@@ -106,20 +106,20 @@ public class ModelsPage {
 			// Click Add Prediction Data button
 			WebUI.click(findTestObject('Object Repository/Home/Models/btn_add_prediction_data'))
 			assert common.waitForElement(findTestObject('Object Repository/Home/Models/txt_add_prediction_data_popup_title'), 5, WaitCondition.ELEMENT_VISIBLE), "Error while verifying Add Prediction Data popup title"
-			
-			// Upload Prediction Data json file			
+
+			// Upload Prediction Data json file
 			fileOperations.uploadFile(findTestObject('Object Repository/Home/link_browse'), file)
-			
+
 			// Verify File Uploaded
 			assert common.waitForElement(findTestObject('Object Repository/Home/txt_upload_complete_status'), 30, WaitCondition.ELEMENT_VISIBLE), "Could not find File upload complete status"
-			
+
 			Path filePath = Paths.get(file.replace('\\', '/'))
 			Path fileName = filePath.getFileName()
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Home/Models/txt_model_config_json_to_be_uploaded', [('fileName'):fileName.toString()]))
-			
+
 			// Click Submit button after upload
 			WebUI.click(findTestObject('Home/Models/btn_submit_data'))
-			
+
 			// Verify and close File Saved toast message
 			assert common.waitForElement(findTestObject('Object Repository/Home/Models/txt_prediction_registered_success_toast_msg'), 5, WaitCondition.ELEMENT_VISIBLE), "Error while verifying Prediction registered success toast message"
 			WebUI.click(findTestObject('Object Repository/Home/Data/btn_close_toast_msg'))
@@ -127,7 +127,7 @@ public class ModelsPage {
 			KeywordUtil.markFailedAndStop(e.getMessage())
 		}
 	}
-	
+
 	@Keyword
 	def navigateToRegisteredModelQuality() {
 		try {
@@ -138,10 +138,10 @@ public class ModelsPage {
 			// Verify Registered Model Data Drift page elements
 			assert common.waitForElement(findTestObject('Object Repository/Home/Models/txt_registered_model_heading', [('modelName'):GlobalVariable.testCaseId]), 5, WaitCondition.ELEMENT_VISIBLE), "Error while verifying Registered Model heading"
 			assert common.waitForElement(findTestObject('Object Repository/Home/Models/btn_react_tabs', [('tabName'):'Model Quality']), 5, WaitCondition.ELEMENT_CLICKABLE), "Error while verifying Model Quality tab clickable"
-			
+
 			// Click Model Quality tab
 			WebUI.click(findTestObject('Object Repository/Home/Models/btn_react_tabs', [('tabName'):'Model Quality']))
-				
+
 			// Verify Registered Model Quality page elements
 			assert common.waitForElement(findTestObject('Object Repository/Home/Models/btn_react_tabs', [('tabName'):'Data Drift']), 5, WaitCondition.ELEMENT_CLICKABLE), "Error while verifying Data Drift tab clickable"
 			assert common.waitForElement(findTestObject('Object Repository/Home/Models/btn_react_tabs', [('tabName'):'Scheduled Tests']), 5, WaitCondition.ELEMENT_CLICKABLE), "Error while verifying Scheduled Tests tab clickable"
@@ -153,27 +153,27 @@ public class ModelsPage {
 			KeywordUtil.markFailedAndStop(e.getMessage())
 		}
 	}
-	
+
 	@Keyword
 	def addGroundTruthData(String file) {
 		try {
 			// Click Add Ground Truth Data button
 			WebUI.click(findTestObject('Object Repository/Home/Models/btn_add_ground_truth_data'))
 			assert common.waitForElement(findTestObject('Object Repository/Home/Models/txt_add_ground_truth_data_popup_title'), 5, WaitCondition.ELEMENT_VISIBLE), "Error while verifying Add Prediction Data popup title"
-			
+
 			// Upload Ground Truth Data json file
 			fileOperations.uploadFile(findTestObject('Object Repository/Home/link_browse'), file)
-			
+
 			// Verify File Uploaded
 			assert common.waitForElement(findTestObject('Object Repository/Home/txt_upload_complete_status'), 30, WaitCondition.ELEMENT_VISIBLE), "Could not find File upload complete status"
-			
+
 			Path filePath = Paths.get(file.replace('\\', '/'))
 			Path fileName = filePath.getFileName()
 			WebUI.verifyElementVisible(findTestObject('Object Repository/Home/Models/txt_model_config_json_to_be_uploaded', [('fileName'):fileName.toString()]))
-			
+
 			// Click Submit button after upload
 			WebUI.click(findTestObject('Home/Models/btn_submit_data'))
-			
+
 			// Verify and close File Saved toast message
 			assert common.waitForElement(findTestObject('Object Repository/Home/Models/txt_ground_truths_registered_success_toast_msg'), 5, WaitCondition.ELEMENT_VISIBLE), "Error while verifying Ground Truths registered success toast message"
 			WebUI.click(findTestObject('Object Repository/Home/Data/btn_close_toast_msg'))
@@ -181,13 +181,48 @@ public class ModelsPage {
 			KeywordUtil.markFailedAndStop(e.getMessage())
 		}
 	}
-	
+
 	@Keyword
 	def searchAndVerifyDataDriftFeature(String feature) {
-		// Search Data Drift feature
-		WebUI.sendKeys(findTestObject('Object Repository/Home/Models/input_search_feature'), feature)
-		
-		// Verify searched feature name
-		WebUI.verifyElementVisible(findTestObject('Object Repository/Home/Models/txt_searched_data_drift_feature_name', [('featureName'):feature]))
+		try {
+			// Search Data Drift feature
+			WebUI.sendKeys(findTestObject('Object Repository/Home/Models/input_search_feature'), feature)
+
+			// Verify searched feature name
+			WebUI.verifyElementVisible(findTestObject('Object Repository/Home/Models/txt_searched_data_drift_feature_name', [('featureName'):feature]))
+		} catch (Exception e) {
+			KeywordUtil.markFailedAndStop(e.getMessage())
+		}
+	}
+
+	@Keyword
+	def applyDateFilterOnDataDrift(String filter) {
+		try {
+			// Click Date Filter dropdown
+			WebUI.click(findTestObject('Object Repository/Home/Models/btn_date_filter_dropdown'))
+			
+			WebUI.delay(5)
+			// TODO: Verify Data Drift Date Filter elements
+			// verifyDataDriftDateFilterElements()
+
+			// Select Date Filter
+			WebUI.click(findTestObject('Object Repository/Home/Models/btn_date_filter', [('filterName'):filter]))
+			
+			// Apply Date Filter
+			WebUI.click(findTestObject('Object Repository/Home/Models/btn_apply_date_filter'))
+		} catch (Exception e) {
+			KeywordUtil.markFailedAndStop(e.getMessage())
+		}
+	}
+
+	private void verifyDataDriftDateFilterElements() {
+		// Verify all expected date filters are available
+		for(String dateFilter : GlobalVariable.dataDriftDateFilterList) {
+			assert common.waitForElement(findTestObject('Object Repository/Home/Models/btn_date_filter', [('filterName'):dateFilter]), 5, WaitCondition.ELEMENT_CLICKABLE), "Could not find date filter for '" + dateFilter + "' clickable"
+		}
+		assert common.waitForElement(findTestObject('Object Repository/Home/Models/btn_from_date_picker'), 3, WaitCondition.ELEMENT_CLICKABLE), "Could not find From date picker"
+		assert common.waitForElement(findTestObject('Object Repository/Home/Models/btn_to_date_picker'), 3, WaitCondition.ELEMENT_CLICKABLE), "Could not find To date picker"
+		assert common.waitForElement(findTestObject('Object Repository/Home/Models/btn_apply_date_filter'), 3, WaitCondition.ELEMENT_CLICKABLE), "Could not find Apply date filter button clickable"
+		assert common.waitForElement(findTestObject('Object Repository/Home/Models/btn_cancel_date_filter'), 3, WaitCondition.ELEMENT_CLICKABLE), "Could not find Cancel date filter button clickable"
 	}
 }

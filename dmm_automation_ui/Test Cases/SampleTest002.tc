@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Search and verify Data Drift feature</description>
    <name>SampleTest002</name>
    <tag></tag>
    <comment></comment>

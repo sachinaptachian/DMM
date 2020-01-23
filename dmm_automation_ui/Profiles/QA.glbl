@@ -54,4 +54,9 @@
       <initValue>'Automation_AddGroundTruthData.json'</initValue>
       <name>groundTruthDataJsonFile</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Data Drift Date Filter List</description>
+      <initValue>['Custom', 'Today', 'Yesterday', 'Week to Date', 'Month to Date', 'Last 7 days', 'Last 30 days']</initValue>
+      <name>dataDriftDateFilterList</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Apply Data Drift Date Filter</description>
+   <name>SampleTest003</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be14b57d-277b-46be-86a5-b51f9f5ddcb9</testCaseGuid>
+</TestCaseEntity>

@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>- Upload any Training file (Training/Prediction/GT file)
+- Register model using the model config json file
+- Add prediction using the Prediction json file
+- Add ground truth using theGT Labels json file</description>
    <name>SampleTest001</name>
    <tag></tag>
    <comment></comment>
